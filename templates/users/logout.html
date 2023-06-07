@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+
+    <div class="content-section">
+        <small class="text-muted">
+            Usted ha salido del sistema de inventario
+            <a href="{% url 'login' %}">Ingresar de nuevo</a>
+        </small>
+
+    </div>
+
+{% endblock %}
