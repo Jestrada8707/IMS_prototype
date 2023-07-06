@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block 'content' %}
+
+    <div class="content-section">
+        <div class="row mx-auto justify-content-center">
+            <div class="card m-4" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Nombre del Producto</h5>
+                    <div style="font-size: 30px;" class="text-center">
+                        <span><i class="fa-solid fa-boxes-stacked"></i></span>
+                    </div>
+                    <h3 class="text-center">{{ inventario.nombre_producto }}</h3>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Cantidad Bodega</h5>
+                    <div style="font-size: 30px;" class="text-center">
+                        <span><i class="fa-solid fa-warehouse"></i></span>
+                    </div>
+                    <h3 class="text-center">{{ inventario.cantidad_bodega }}</h3>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Cantidad Utilizada</h5>
+                    <div style="font-size: 30px;" class="text-center">
+                        <span><i class="fa-solid fa-industry"></i></span>
+                    </div>
+                    <h3 class="text-center">{{ inventario.cantidad_utilizada }}</h3>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Costo Unitario</h5>
+                    <div style="font-size: 30px;" class="text-center">
+                        <span><i class="fa-solid fa-coins"></i></span>
+                    </div>
+                    <h3 class="text-center">{{ inventario.cantidad_utilizada }}</h3>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Fecha Creación</h5>
+                    <div style="font-size: 30px;" class="text-center">
+                        <span><i class="fa-regular fa-clock"></i></span>
+                    </div>
+                    <h3 class="text-center">{{ inventario.fecha_creacion }}</h3>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Última Actualización</h5>
+                    <div style="font-size: 30px;" class="text-center">
+                        <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+                    </div>
+                    <h3 class="text-center">{{ inventario.ultima_actualizacion }}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
