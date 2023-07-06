@@ -58,6 +58,11 @@
                     <h3 class="text-center">{{ inventario.ultima_actualizacion }}</h3>
                 </div>
             </div>
+            <div>
+                <a class="btn btn-danger btn-sm" href="{% url 'borrar_inventario' inventario.id %}">Borrar Producto</a>
+                <a class="btn btn-outline-success btn-sm" href="{% url 'actualizar_producto' inventario.id %}">
+                    Actualizar Producto</a>
+            </div>
         </div>
     </div>
 
